@@ -4,4 +4,4 @@
 # Displays in a user-oriented format
 # Show process hierarchy
 
-ps -e u
+ps -au
