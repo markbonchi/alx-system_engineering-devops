@@ -4,12 +4,12 @@ min=60
 hr=0
 while :
 do
-	if (("$min" == 60)); then
+	if (("$hr" == 12 && "$min" == 60))
+		break
+	elif (("$min" == 60)); then
 		echo "Hour: " $hr
 		min=1
 		((hr++))
-	elif (("$hr" == 12 && "$min" == 59)); then
-		break
 	else
 		echo $min
 		((min++))
