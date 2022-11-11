@@ -9,6 +9,7 @@ do
 		min=1
 		((hr++))
 	elif (("$hr" == 12)); then
+		echo "Hour: " $hr
 		break
 	else
 		echo $min
