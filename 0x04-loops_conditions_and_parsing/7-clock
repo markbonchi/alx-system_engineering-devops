@@ -8,8 +8,7 @@ do
 		echo "Hour: " $hr
 		min=1
 		((hr++))
-	elif (("$hr" == 12)); then
-		echo "Hour: " $hr
+	elif (("$hr" == 12 && "$min" == 59)); then
 		break
 	else
 		echo $min
