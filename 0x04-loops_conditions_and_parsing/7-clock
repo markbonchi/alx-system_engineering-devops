@@ -5,6 +5,7 @@ hr=0
 while :
 do
 	if (("$hr" == 12 && "$min" == 60)); then
+		echo "Hour: " $hr
 		break
 	elif (("$min" == 60)); then
 		echo "Hour: " $hr
