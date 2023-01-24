@@ -38,6 +38,4 @@ sudo touch /var/www/html/404.html
 sudo echo "Ceci n'est pas une page" > /var/www/html/404.html
 
 sudo echo "$config" | sudo tee /etc/nginx/sites-available/default
-
-
 sudo service nginx restart
