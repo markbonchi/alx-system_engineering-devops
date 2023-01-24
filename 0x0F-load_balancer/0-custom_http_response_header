@@ -9,7 +9,7 @@
 #+    The value of the HTTP header is the hostname of the running server.
 
 config="\
-/server {
+server {
    listen 80 default_server;
    listen [::]:80 default_server;
    add_header X-Served-By $HOSTNAME;
