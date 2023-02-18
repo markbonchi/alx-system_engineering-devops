@@ -31,4 +31,4 @@ if __name__ == "__main__":
             count += 1
       print("Employee {} is done with tasks({}/{}):".format(name, count, total))
       for val in task:
-        print("\t{}".format(val))
+        print("\t {}".format(val))
