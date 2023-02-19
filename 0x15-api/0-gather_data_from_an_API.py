@@ -12,18 +12,14 @@ if __name__ == "__main__":
 	url = 'https://jsonplaceholder.typicode.com/'
 	users = requests.get(url + 'users')
 	todos = requests.get(url + 'todos')
-#   	print(users.json())
 
 	for item in users.json():
-#    	print(item)
 		if arg == item.get("id"):
-#   	    	print(item)
 			total = 0
 			count = 0
 			name = item.get("name")
 			task = []
 			for i in todos.json():
-#     				print(i)
 				if arg == i.get("userId"):
 					total += 1
 					if i.get("completed"):
