@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Module for number_of_subscribers function"""
+
+
 import requests
 
 
